@@ -58,6 +58,7 @@ docs/_build/
 # PyBuilder
 target/
 
-assets/drugcell/
+assets/drugcell/DrugCell/data
+assets/drugcell/DrugCell/pretrained_model
 
 .vscode/
