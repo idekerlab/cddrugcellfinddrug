@@ -23,3 +23,34 @@ Overview
 
 This service is Docker container managed by a running instance of the Community Detection REST Service.
 
+Building
+========
+
+The following make command will build the docker image:
+
+```
+make dockerbuild
+```
+
+
+
+Testing
+=======
+
+This service accepts an input file of gene symbols, one symbol per line.
+
+*input.txt*
+```
+KRAS
+MAP3K5
+```
+
+To execute the analysis, run this command. The resulting JSON output will be streamed to the console:
+
+```
+docker run -v `pwd`:`pwd` dotasekndex/drugcellfinddrug:0.1.0 `pwd`/input.txt
+```
+
+Adding to CDAPS Service
+=======================
+
