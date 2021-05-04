@@ -19,22 +19,22 @@ Requirements
 
 You will also need to add the DrugCell training data and supporting data to the cloned repository, as these are inefficient to store in GitHub.
 
-Your final directory structure should look like this:
+The files required are provided [here](http://drugcell.ucsd.edu/downloads/) and are to be used in this manner:
+
+```drugcell_v1.pt``` should be copied to: ```cddrugcellfinddrug/assets/drugcell/DrugCell/pretrained_model/drugcell_v1.pt```
+
+```data.tgz``` should be expanded and copied to: ```cddrugcellfinddrug/assets/drugcell/DrugCell/data/```
+
+The data directory should look like this:
+
 ```
-cddrugcellfinddrug     <-- root directory
-├── assets
-│   ├── drugcell
-│   │   ├── DrugCell
-│   │   │   ├── data
-│   │   │   │
-│   │   │   ├── pretrained_model
-│   │   │   │
-│   │   │   └── ...
-│   │   └── drug_data
-│   └── environment_cpu_linux.yml
+data        <-- data directory (cddrugcellfinddrug/assets/drugcell/DrugCell/data)
+├── rlipp   <-- rlipp directory
+├── cell2ind.txt
+├── cell2mutation.txt
+├── cell2mutation_fixed.txt
 └── ...
 ```
-
 
 For integration with CDAPs service:
 * [Community Detection REST Service][cdrest] must be installed and configured
