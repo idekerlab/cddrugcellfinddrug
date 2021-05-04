@@ -68,7 +68,7 @@ docker run -v `pwd`:`pwd` dotasekndex/drugcellfinddrug:0.1.0 `pwd`/input.txt
 Adding to CDAPS Service
 =======================
 
-cddrugcellfinddrug can be added to a CDAPs server by adding an entry to the communitydetectionalgorithms.file:
+cddrugcellfinddrug can be added to a CDAPs server by adding an entry to the communitydetectionalgorithms.json file:
 
 ```
 {
