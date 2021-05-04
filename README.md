@@ -1,6 +1,7 @@
 [docker]: https://www.docker.com/
 [make]: https://www.gnu.org/software/make
 [cdrest]: https://github.com/cytoscape/communitydetection-rest-server
+[cdrestwiki]: https://github.com/cytoscape/communitydetection-rest-server/wiki
 
 DrugCell Genotype Analyzer Service
 ==================================
@@ -68,7 +69,7 @@ docker run -v `pwd`:`pwd` dotasekndex/drugcellfinddrug:0.1.0 `pwd`/input.txt
 Adding to CDAPS Service
 =======================
 
-cddrugcellfinddrug can be added to a CDAPs server by adding an entry to the communitydetectionalgorithms.json file:
+cddrugcellfinddrug can be added to a CDAPs server by adding an entry to the communitydetection.algorithm.map file (normally communitydetectionalgorithms.json):
 
 ```
 {
@@ -89,3 +90,5 @@ cddrugcellfinddrug can be added to a CDAPs server by adding an entry to the comm
   }
 }
 ```
+
+For in-depth information on configuring and running Community Detection REST Service, see the CDAPS [wiki][cdrestwiki].
