@@ -16,6 +16,9 @@ Requirements
 * MacOS, Centos 6+, Ubuntu 12+, and most other Linux distributions should work
 * [Make][make] **(to build)**
 * [Docker]
+
+
+For integration with CDAPs service:
 * [Community Detection REST Service][cdrest] must be installed and configured
 
 Overview
@@ -34,8 +37,8 @@ make dockerbuild
 
 
 
-Testing
-=======
+Trying out the service
+======================
 
 This service accepts an input file of gene symbols, one symbol per line.
 
@@ -53,4 +56,6 @@ docker run -v `pwd`:`pwd` dotasekndex/drugcellfinddrug:0.1.0 `pwd`/input.txt
 
 Adding to CDAPS Service
 =======================
+
+
 
